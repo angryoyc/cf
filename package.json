@@ -1,0 +1,26 @@
+{
+  "name": "cf",
+  "version": "0.0.1",
+  "description": "Common JavaScript code helpful functions",
+  "main": "cf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://serg@settv.ru:1022/opt/git/cf.git"
+  },
+  "keywords": [
+  ],
+  "dependencies": {
+    "rsvp": "^3.0.14"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.3.0-beta1"
+  },
+  "author": "Serg A. Osipov",
+  "license": "ISC"
+}
