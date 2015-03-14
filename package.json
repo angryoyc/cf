@@ -16,7 +16,7 @@
   "keywords": [
   ],
   "dependencies": {
-    "rsvp": "^3.0.14",
+    "rsvp": "^3.0.14"
   },
   "devDependencies": {
     "jsdoc": "^3.3.0-beta1"
