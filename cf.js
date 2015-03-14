@@ -193,6 +193,7 @@ exports.asy=function(argv, func){
 	};
 };
 
+/*
 var getDelivery = require('delivery');
 exports.mail=function(env, arg, callback, callback_err, res){
 	var conf = env.conf.email[env.conf.email.checked];
@@ -251,6 +252,7 @@ exports.mail=function(env, arg, callback, callback_err, res){
 		});
 	};
 };
+*/
 
 /**
  * Возвращает md5-digest от входного парамтра
