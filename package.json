@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "rsvp": "^3.0.14",
-    "delivery": "git+ssh://serg@settv.ru:1022/opt/git/delivery.git"
   },
   "devDependencies": {
     "jsdoc": "^3.3.0-beta1"
