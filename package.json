@@ -13,13 +13,13 @@
     "type": "git",
     "url": "ssh://serg@settv.ru:1022/opt/git/cf.git"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "dependencies": {
     "rsvp": "^3.0.14"
   },
   "devDependencies": {
-    "jsdoc": "^3.3.0-beta1"
+    "jsdoc": "^3.3.0-beta1",
+    "should": "^5.2.0"
   },
   "author": "Serg A. Osipov",
   "license": "ISC"

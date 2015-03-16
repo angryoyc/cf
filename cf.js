@@ -1,4 +1,4 @@
-
+"use strict"
 /** @module cf
  * @name cf
  * @author Serg A. Osipov
@@ -6,6 +6,7 @@
  * @overview Common useful function for often use
  */
 var RSVP = require('rsvp');
+var crypto = require('crypto');
 
 /**
  * Объединение двух объектов
@@ -192,67 +193,6 @@ exports.asy=function(argv, func){
 		});
 	};
 };
-
-/*
-var getDelivery = require('delivery');
-exports.mail=function(env, arg, callback, callback_err, res){
-	var conf = env.conf.email[env.conf.email.checked];
-	var delivery=getDelivery(conf);
-	if(callback && typeof(callback)=='function'){
-		delivery.mail.send(arg, 3)
-		.then(
-			function(result){
-				//- console.log('// common: mail: ok result: '.green, result);
-				if(res && exports.isObject(res)){
-					exports.mergeInto(res, result);
-					if(callback_err && typeof(callback_err)=='function'){
-						callback(res);
-					}else{
-						callback(null, res);
-					};
-				}else{
-					if(callback_err && typeof(callback_err)=='function'){
-						callback(result);
-					}else{
-						callback(null, result);
-					};
-				};
-			},
-			function(err){
-				//- console.log('// common: mail: err result: '.red, err);
-				if(callback_err && typeof(callback_err)=='function'){
-					callback_err(err);
-				}else{
-					callback(err);
-				}
-			}
-		).catch(
-			function(err){
-				if(callback_err && typeof(callback_err)=='function'){
-					callback_err(err);
-				}else{
-					callback(err);
-				}
-			}
-		);
-	}else{
-		return new RSVP.Promise(function(resolve, reject){
-			delivery.mail.send(arg, 3)
-			.then(
-				function(result){
-					if(res){
-						exports.mergeInto(res, result);
-						resolve(res);
-					}else{
-						resolve(result);
-					};
-				},
-				reject
-			).catch(reject);
-		});
-	};
-};
-*/
 
 /**
  * Возвращает md5-digest от входного парамтра
