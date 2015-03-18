@@ -54,6 +54,18 @@ exports.getRandomInt=function(min, max){
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
+
+/**
+ * Возвращает случайную строку указанной длины
+ * @param  {number} len Желаемая длина строки
+ * @return {string}     Случайная строка
+ */
+
+exports.getRandomString=function(len){
+	return crypto.randomBytes((parseInt(len)/2) || 16).toString('hex');
+};
+
+
 /**
  * Возвращает true если переданный параметр является массивом.
  * @param  {any}  obj 	Параметр, тип которого проверяется.	
