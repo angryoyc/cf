@@ -18,6 +18,7 @@
     "rsvp": "^3.0.14"
   },
   "devDependencies": {
+    "mocha": "1.7.0",
     "jsdoc": "^3.3.0-beta1",
     "should": "^5.2.0"
   },
