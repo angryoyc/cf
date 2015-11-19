@@ -1,6 +1,5 @@
 #!/usr/local/bin/node
 var should = require('should');
-
 var cf = require('../cf');
 
 describe('cf', function(){

@@ -5,7 +5,9 @@
  * @email serg.osipov@gmail.com
  * @overview Common useful function for often use
  */
-var RSVP = require('rsvp');
+
+//var RSVP = require('rsvp');
+
 var crypto = require('crypto');
 
 /**
@@ -196,7 +198,7 @@ exports.asy=function(argv, func){
 			std_reject(callbacks)(err)
 		}
 	}else{
-		return new RSVP.Promise(function(resolve, reject){
+		return new Promise(function(resolve, reject){
 			try{
 				func.apply(this, options.concat([std_resolve([resolve, reject]), reject]));
 			}catch(err){
