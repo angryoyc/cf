@@ -77,5 +77,16 @@ describe('cf', function(){
 			);
 		});
 	});
+
+	describe('testEmail', function(){
+		it('should return true if string like e-mail', function(done){
+			cf.testEmail('serg.osipov@gmail.com').should.eql(true);
+			done();
+		});
+		it('should return false if string not like e-mail', function(done){
+			cf.testEmail('serg.osipov@gmail').should.eql(false);
+			done();
+		});
+	});
 	
 });
