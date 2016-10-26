@@ -8,3 +8,8 @@ Install
 --------
 
 npm install git+https://github.com/angryoyc/cf.git
+
+
+Thanks
+--------
+For my self
