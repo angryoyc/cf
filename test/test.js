@@ -24,6 +24,14 @@ describe('cf', function(){
 			done();
 		});
 	});
+
+	describe('trim', function(){
+		it('should return string "ok"', function(done){
+			cf.trim('  ok   ').should.eql('ok');
+			done();
+		});
+	});
+
 	describe('mergeInto', function(){
 		it('should return united object with selected propertys', function(done){
 			cf.mergeInto({a:1}, {b:2, d:7, c:6}, ["a", "b"]).should.eql({a:1, b:2});

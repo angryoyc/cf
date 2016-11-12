@@ -1,4 +1,4 @@
-"use strict"
+'use strict';
 /** @module cf
  * @name cf
  * @author Serg A. Osipov
@@ -45,6 +45,16 @@ exports.mergeInto = function (o1, o2, list) {
 	};
 	return o1;
 };
+
+/**
+ * Возвращает вхдную строку с обрезанными пробелами в конце и начале строки
+ * @param  {string} s Входящая строка
+ * @return {number}   Выходящая строка с обрезанными пробелами
+ */
+exports.trim = function(s){
+	return s.replace(/^ +/,'').replace(/ +$/,'');
+}
+
 
 /**
  * Возвращает случайное целое число большее чем min, но меньшее чем max
