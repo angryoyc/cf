@@ -224,3 +224,20 @@ exports.asy=function(argv, func){
  * @return {[string]}           md5-digest от входного парамтра
  */
 exports.md5=function(d){return crypto.createHash('md5').update(d).digest('hex');};
+
+/**
+ * Возвращает числовое значение входного параметра округлённое до второго знака после запятой.
+ * @param  {[string|float|integer]}		Число в для преобразование. Можно в виде строки
+ * @return {[float]}					Вычисленное значение
+ */
+exports.money=function(s){
+	return Math.round(parseFloat(s)*100)/100;
+};
+
+/**
+ * Возвращает true если входная строка-аргумент напоминает e-mail
+ * @param  {[string]}			тестируемый e-mail
+ */
+exports.testEmail = function(email){
+	return email.match(/.+@.+\..+/)?true:false;
+};

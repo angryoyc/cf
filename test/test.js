@@ -53,6 +53,13 @@ describe('cf', function(){
 		});
 	});
 
+	describe('money', function(){
+		it('should return number in string with length=5', function(done){
+			cf.money('55.66').toString().length.should.eql(5);
+			done();
+		});
+	});
+
 	describe('asy', function(){
 		it('should return first parameter', function(done){
 			cf.asy({"0":1, "1": 2}, function(a, b, cb, cb_e){cb(a)})
@@ -76,6 +83,17 @@ describe('cf', function(){
 					done();
 				}
 			);
+		});
+	});
+
+	describe('testEmail', function(){
+		it('should return true if string like e-mail', function(done){
+			cf.testEmail('serg.osipov@gmail.com').should.eql(true);
+			done();
+		});
+		it('should return false if string not like e-mail', function(done){
+			cf.testEmail('serg.osipov@gmail').should.eql(false);
+			done();
 		});
 	});
 	

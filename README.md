@@ -7,4 +7,9 @@ Common JavaScript code helpful functions
 Install
 --------
 
-npm install git+ssh://serg@settv.ru:1022/opt/git/cf.git
+npm install git+https://github.com/angryoyc/cf.git
+
+
+Thanks
+--------
+For my self
