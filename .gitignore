@@ -7,4 +7,5 @@ trash
 trash/*
 static/less/styles.css
 .DS_Store
+yarn.lock
 
